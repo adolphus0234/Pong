@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="#">
+	<title>Pong Practice</title>
+	<style type="text/css">
+		@font-face {
+			font-family: Ponde;
+			src: url(./fonts/ponde_.ttf);
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			background: rgb(35, 0, 0);
+			padding-top: 15px;
+		}
+
+		canvas {
+			border-style: double;
+			border-width: 10px;
+			border-color: rgb(200, 0, 0);
+			box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+		}
+
+		#p1_score {
+			font-family: Ponde;
+			margin-left: 335px;
+			margin-top: 10px;
+			padding-top: 15px;
+			color: white;
+			font-weight: 2;
+			font-size: 5em;
+		}
+
+		#p2_score {
+			font-family: Ponde;
+			margin-left: 80px;
+			margin-top: 10px;
+			padding-top: 15px;
+			color: white;
+			font-weight: 2; 
+			font-size: 5em;
+		}
+
+		#grid {
+			display: grid;
+			grid-template-columns: 475px 475px;
+			position: absolute;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body id="body">
+	<div id="grid">
+		<h1 id="p1_score"></h1>
+		<h1 id="p2_score"></h1>
+	</div>
+	<canvas id="pong" height="650" width="950"></canvas>
+	<script type="module" src="js/main.js"></script>
+</body>
+</html>
